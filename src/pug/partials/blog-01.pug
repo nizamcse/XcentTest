@@ -1,0 +1,23 @@
+include ../modules/blog-01.pug
+include ../modules/_about-us-modules.pug
+
+mixin blog_01(date,month)
+    .blog-card-01
+        .card-img-wrapper
+            +figure("blog-01-card-img","test.jpg")
+            .card-sticker
+                span.date=date
+                span.month=month
+            +blog_card_1_text("WHY BILLIONAIRES JOIN GATES GIVING PLEDGE","PRIUM","30 COMMENTS","They signed the Giving Pledge an effort started in 2010 by")
+
+
+mixin blog_01_section()
+    section.blog-01
+        .container
+            .row
+                .col-md-4
+                    +blog_01("28","FEB")
+                .col-md-4
+                     +blog_01("28","FEB")
+                .col-md-4
+                     +blog_01("28","FEB")
