@@ -1,0 +1,19 @@
+include ../modules/_about-us-modules.pug
+include ../modules/form-01.pug
+
+
+mixin form_01_text(para)
+    .form-01-wraper
+        +form_01("JOIN")
+        p=para
+
+
+
+mixin form_01_section()
+    section.form
+        .container
+            .row
+                .col-md-4
+                    +about_us_1(["SUBSRIBE"],["TO OUR NEWSLETTER"])
+                .col-md-8
+                    +form_01_text("WE ARE HAPPY TO LISTEN")
