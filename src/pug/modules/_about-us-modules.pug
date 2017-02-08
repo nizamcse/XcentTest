@@ -1,0 +1,6 @@
+mixin about_us_1(facilities,title,paragraph)
+    .about-content(class="facilities")
+        if title
+            h4=title
+        each passage in paragraph
+            p=passage
