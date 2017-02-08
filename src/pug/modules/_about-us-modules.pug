@@ -1,6 +1,13 @@
-mixin about_us_1(facilities,title,paragraph)
-    .about-content(class="facilities")
+mixin figure(fig_class,img)
+    figure(class=fig_class)
+        img(src=img)
+
+mixin about_us_1(title,paragraph)
+    .about-content
         if title
             h4=title
         each passage in paragraph
             p=passage
+
+
+
