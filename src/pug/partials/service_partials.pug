@@ -1,0 +1,26 @@
+include ../modules/clients.pug
+include ../modules/_about-us-modules.pug
+mixin service()
+    section.services
+        +heading("check our best","Services")
+        .container
+            .row
+                .col-md-4.graphics
+                    +clients_icons("clients-content","icons","ion-paintbrush")
+                    +about_us_1("GRAPHICS DESIGN",["Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. "])
+                .col-md-4.web
+                    +clients_icons("clients-content","icons","icon-mobile")
+                    +about_us_1("WEB DESIGN",["Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. "])
+                .col-md-4.developement
+                    +clients_icons("clients-content","icons","icon-computer_imac_thick")
+                    +about_us_1("WEB DEVELOPEMENT",["Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. "])
+            .row
+                .col-md-4.graphics
+                    +clients_icons("clients-content","icons","icon-device_ipad")
+                    +about_us_1("GAME DEVELOPEMENT",["Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. "])
+                .col-md-4.web
+                    +clients_icons("clients-content","icons","icon-bargraph")
+                    +about_us_1("SEO EXPERT",["Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. "])
+                .col-md-4.developement
+                    +clients_icons("clients-content","icons","icon-genius")
+                    +about_us_1("UX EXPERT",["Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. "])

@@ -1,0 +1,24 @@
+include ../modules/clients.pug
+include ../modules/_about-us-modules.pug
+mixin feedback()
+    section.clients
+        .clients-heading
+            +heading("clients are","Loving Us")
+        .container
+            .row
+                .clients-content
+                    .col-md-6
+                        +figure("clients-figure","")
+                    .col-md-6
+                        .feature-list-1
+                            +clients_icons("clients-content","icons","ion-ios-people")
+                            +about_us_1("WE ARE PROFESSIONAL",["Quisque vel magna quis massa finibus facilisis. Aenean a lacinia erat venenatis turpis. Pellentesque habitant morbi tristique senectus massa "])
+                        .feature-list-1
+                            +clients_icons("clients-content","icons","ion-ios-people")
+                            +about_us_1("WE ARE PROFESSIONAL",["Quisque vel magna quis massa finibus facilisis. Aenean a lacinia erat venenatis turpis. Pellentesque habitant morbi tristique senectus massa "])
+                        .feature-list-1
+                            +clients_icons("clients-content","icons","ion-ios-people")
+                            +about_us_1("WE ARE PROFESSIONAL",["Quisque vel magna quis massa finibus facilisis. Aenean a lacinia erat venenatis turpis. Pellentesque habitant morbi tristique senectus massa "])
+
+
+
